@@ -2,16 +2,23 @@
 
 Java program that creates a hash code for a input file and also verifies if a given hash code is compatible to a certain file.
 
-For execution, the compilation must have one of the fallowing arguments:
+For execution, the compilation must have the following arguments:
+(Each step must be executed separately, in the following order)
 
-#### To create a Hash Code:
+#### 1) To create a Hash Code:
+```
+--hash <file>
+```
+Example:
 ```
 --hash dracula.txt
 ```
 
-#### To verify the Hash Code:
+#### 2) To verify the Hash Code:
 ```
---verify dracula.txt <hashCode>
+--verify <file> <hashCode>
 ```
-
-The input file ``dracula.txt`` can be change for any other file.
+Example:
+```
+--verify dracula.txt 4B2EB019E8B3C5474A5380B8E59B23107DAFC623465F8FFB4410B5D98E0ED702
+```
